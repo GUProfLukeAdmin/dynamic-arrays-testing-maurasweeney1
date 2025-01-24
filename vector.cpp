@@ -11,6 +11,8 @@ void part1() {
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> diff = end - start;
     std::cout << "After adding elements: Size = " << v.size() << ", Capacity = " << v.capacity() << v.capacity() << std::endl;
+    v.resize(v.size() / 2);
+    std::cout << "After resizing: Size = " << v.size() << ", Capacity = " << v.capacity() << v.capacity() << std::endl;
 }
 
 void part2() {
