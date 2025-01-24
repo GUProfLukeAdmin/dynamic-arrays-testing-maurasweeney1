@@ -19,7 +19,7 @@ jobs:
       with:
         test-name: test
         setup-command: ''
-        command: g++ vector.cpp -o main
+        command: g++ vector.cpp
         input: ''
         expected-output: |-
           After adding elements: Size = 50000, Capacity = 65536
