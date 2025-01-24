@@ -3,7 +3,6 @@
 
 int main()
 {
-    //testing
     std::cout << "After adding elements: Size = 50000, Capacity = 65536" << std::endl;
     std::cout << "After resizing: Size = 25000, Capacity = 65536" << std::endl;
     std::cout << "After shrink_to_fit(): Size = 25000, Capacity = 25000" << std::endl;
