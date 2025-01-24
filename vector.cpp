@@ -13,6 +13,12 @@ void part1() {
     std::cout << "After adding elements: Size = " << v.size() << ", Capacity = " << v.capacity() << v.capacity() << std::endl;
     v.resize(v.size() / 2);
     std::cout << "After resizing: Size = " << v.size() << ", Capacity = " << v.capacity() << v.capacity() << std::endl;
+    v.shrink_to_fit();
+    std::cout << "After shrinking: Size = " << v.size() << ", Capacity = " << v.capacity() << v.capacity() << std::endl;
+
+    auto time = std::chrono::high_resolution_clock::now() - start;
+    std::chrono::duration<double> total_duration = time;
+    std::cout << "Total time taken: " << total_duration.count() * 1000 << " ms" << std::endl;
 }
 
 void part2() {
