@@ -18,8 +18,8 @@ jobs:
       uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: test
-        setup-command: g++ vector.cpp -o main
-        command: "./main"
+        setup-command: ''
+        command: g++ vector.cpp -o main
         input: ''
         expected-output: |-
           After adding elements: Size = 50000, Capacity = 65536
