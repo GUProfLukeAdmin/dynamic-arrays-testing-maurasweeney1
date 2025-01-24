@@ -30,9 +30,22 @@ jobs:
           Memory usage of std::vector<char>: 10256 bytes
         comparison-method: contains
         timeout: 10
+    - name: test 2
+      id: test-2
+      uses: classroom-resources/autograding-io-grader@v1
+      with:
+        test-name: test 2
+        setup-command: g++ vector.cpp -o main
+        command: "./main"
+        input: ''
+        expected-output: After
+        comparison-method: contains
+        timeout: 10
+        max-score: 10
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
         TEST_RESULTS: "${{steps.test.outputs.result}}"
+        TEST-2_RESULTS: "${{steps.test-2.outputs.result}}"
       with:
-        runners: test
+        runners: test,test-2
