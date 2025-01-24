@@ -1,13 +1,24 @@
 #include <vector>
 #include <iostream>
+#include <chrono>
 
-int main()
-{
-    std::cout << "After adding elements: Size = 50000, Capacity = 65536" << std::endl;
-    std::cout << "After resizing: Size = 25000, Capacity = 65536" << std::endl;
-    std::cout << "After shrink_to_fit(): Size = 25000, Capacity = 25000" << std::endl;
-    std::cout << "Time taken: 12 ms" << std::endl;
-    std::cout << "Memory usage of std::vector<bool>: 1256 bytes" << std::endl;
-    std::cout << "Memory usage of std::vector<char>: 10256 bytes" << std::endl;
+void part1() {
+    std::vector<int> v;
+    auto start = std::chrono::high_resolution_clock::now();
+    for (int i = 0; i < 50000; ++i) {
+        v.push_back(i);
+    }
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> diff = end - start;
+    std::cout << "After adding elements: Size = " << v.size() << ", Capacity = " << v.capacity() << v.capacity() << std::endl;
+}
+
+void part2() {
+    //TODO: Implement part 2
+}
+
+int main() {
+    part1();
+    part2();
     return 0;
 }
