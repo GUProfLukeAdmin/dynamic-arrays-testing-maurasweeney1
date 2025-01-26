@@ -42,7 +42,7 @@ jobs:
         expected-output: 'After adding elements: Size = 50000'
         comparison-method: contains
         timeout: 10
-        max-score: 10
+        max-score: 11
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
