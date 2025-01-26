@@ -39,7 +39,7 @@ jobs:
         setup-command: g++ vector.cpp -o main
         command: "./main"
         input: ''
-        expected-output: After
+        expected-output: 'After adding elements: Size = 50000'
         comparison-method: contains
         timeout: 10
         max-score: 10
