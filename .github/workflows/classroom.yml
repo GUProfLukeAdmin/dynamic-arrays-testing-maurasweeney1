@@ -39,10 +39,10 @@ jobs:
         setup-command: g++ vector.cpp -o main
         command: "./main"
         input: ''
-        expected-output: 'After adding elements: Size = 50000'
+        expected-output: 'After adding elements: Size = 50000, Capacity = 6553665536'
         comparison-method: contains
         timeout: 10
-        max-score: 11
+        max-score: 12
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
