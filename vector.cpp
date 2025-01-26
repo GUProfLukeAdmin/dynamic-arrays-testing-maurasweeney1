@@ -22,7 +22,6 @@ void part1() {
 }
 
 void part2() {
-    //TODO: Implement part 2
 }
 
 int main() {
