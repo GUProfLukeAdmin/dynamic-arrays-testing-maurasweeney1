@@ -27,7 +27,7 @@ jobs:
           After shrink_to_fit(): Size = 25000, Capacity = 25000
           Memory usage of std::vector<bool>: 1256 bytes
           Memory usage of std::vector<char>: 10000 bytes
-        comparison-method: contains
+        comparison-method: regex
         timeout: 30
         max-score: 10
     - name: Autograding Reporter
