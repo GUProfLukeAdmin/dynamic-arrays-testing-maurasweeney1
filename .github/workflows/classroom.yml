@@ -25,6 +25,7 @@ jobs:
           After adding elements: Size = 50000, Capacity = 65536
           After resizing: Size = 25000, Capacity = 65536
           After shrink_to_fit(): Size = 25000, Capacity = 25000
+          Time taken: \d+\.\d+ ms
           Memory usage of std::vector<bool>: 1256 bytes
           Memory usage of std::vector<char>: 10000 bytes
         comparison-method: regex
