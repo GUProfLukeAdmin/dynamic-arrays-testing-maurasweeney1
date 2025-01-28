@@ -24,7 +24,6 @@ void part1() {
 void part2() {
     std::vector<bool> boolVector(10000);
     std::vector<char> charVector(10000);
-
     size_t boolVectorMemory = boolVector.capacity() / 8;
     size_t charVectorMemory = charVector.capacity();
     std::cout << "Memory usage of std::vector<bool>: " << boolVectorMemory << " bytes" << std::endl;
