@@ -18,7 +18,7 @@ void part1() {
 
     auto time = std::chrono::high_resolution_clock::now() - start;
     std::chrono::duration<double> total_duration = time;
-    std::cout << "Time taken: " << total_duration.count() * 1000 << " ms" << std::endl;
+    //std::cout << "Time taken: " << total_duration.count() * 1000 << " ms" << std::endl;
 }
 
 void part2() {
