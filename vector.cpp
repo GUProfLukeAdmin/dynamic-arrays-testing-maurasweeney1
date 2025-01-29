@@ -7,6 +7,7 @@ void part1() {
     for (int i = 0; i < 50000; ++i) {
         v.push_back(i);
     }
+    
     std::cout << "After adding elements: Size = " << v.size() << ", Capacity = " << v.capacity() << std::endl;
     v.resize(v.size() / 2);
     std::cout << "After resizing: Size = " << v.size() << ", Capacity = " << v.capacity() << std::endl;
